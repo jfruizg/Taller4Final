@@ -11,13 +11,13 @@
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="Prueba2" />
+          <element id="module-output" name="Taller4Final" />
         </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/Prueba2-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="Prueba2/web/Web" />
+      <element id="javaee-facet-resources" facet="Taller4Final/web/Web" />
     </root>
   </artifact>
 </component>
