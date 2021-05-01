@@ -1,5 +1,7 @@
 package com.example.Prueba2;
 
+import javafx.scene.control.Alert;
+
 import java.io.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
@@ -16,13 +18,14 @@ public class Login extends HttpServlet {
 
         try {
             PrintWriter out = response.getWriter();
+
             out.println("hello" + name);
 
             Cookie c1 = new Cookie("userName", name);
 
             response.addCookie(c1);
 
-            out.println("<a href='pag2.html'>View Details</a>"); // se agrego un enlcae que se dirije a otros servlet
+            response.sendRedirect(request.getContextPath() + "/pag2.html"); // se agrego un enlcae que se dirije a otros servlet
             out.close();
 
         }catch (Exception e){
